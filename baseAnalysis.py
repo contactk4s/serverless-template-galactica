@@ -10,9 +10,16 @@ str_of_work_yr = '\n\nQ: What year did start work the candidate of the abstract 
 
 EMPTY = ''
 
+'''
 query_map = {"technologies":tech_extr , "programming-languages":pgrm_extr,
              "databases" : dtbs_extr , "education": edu_extr, "fit-to-startups": startup_fit,
             "profile":profile_extr,"years-of-work":str_of_work_yr}
+'''
+query_map = {"technologies":tech_extr , 
+             "programming-languages":pgrm_extr,
+             "databases" : dtbs_extr , 
+             "fit-to-startups": startup_fit,
+             "profile":profile_extr}
 
 def parse_answer(s):
   try:
