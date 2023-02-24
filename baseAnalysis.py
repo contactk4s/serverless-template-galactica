@@ -1,11 +1,11 @@
 
-tech_extr = '\n\nQ: What software technologies are mentioned in the abstract above?\n\nA:'
+tech_extr = '\n\nQ: What software technologies and languages are mentioned in the abstract above?\n\nA:'
 pgrm_extr = '\n\nQ: What programming languages are mentioned in the abstract above?\n\nA:'
 dtbs_extr = '\n\nQ: What databases are mentioned in the abstract above?\n\nA:'
 edu_extr  = '\n\nQ: What education institutes are mentioned in the abstract above?\n\nA:'
 
 startup_fit  = '\n\nQ: Is the resume above a good fit to startups?\n\nA:'
-profile_extr = '\n\nQ: Among Developer, Tester, Back End, Front End, BlockChain Developer, DataScience, Manager What is the best classification for the resume above?\n\nA:'
+profile_extr = '\n\nQ: Among Developer, Tester, Back End, Front End, BlockChain Developer, DataScience, Manager, DBA What is the best classification for the resume above?\n\nA:'
 str_of_work_yr = '\n\nQ: What year did start work the candidate of the abstract above?\n\nA:'
 
 EMPTY = ''
@@ -15,11 +15,8 @@ query_map = {"technologies":tech_extr , "programming-languages":pgrm_extr,
              "databases" : dtbs_extr , "education": edu_extr, "fit-to-startups": startup_fit,
             "profile":profile_extr,"years-of-work":str_of_work_yr}
 '''
-query_map = {"technologies":tech_extr , 
-             "programming-languages":pgrm_extr,
-             "databases" : dtbs_extr , 
-             "fit-to-startups": startup_fit,
-             "profile":profile_extr}
+query_map = {"technologies":tech_extr ,
+             "profile":profile_extr }
 
 def parse_answer(s):
   try:
